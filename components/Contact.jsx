@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import { EmailOutlined } from '@mui/icons-material';
+import LoadingSpinner from './LoadingSpinner';
 
 
 const Contact = () => {
