@@ -27,6 +27,9 @@ const Contact = () => {
           if (response.ok) {
             //console.log('Email sent successfully');
             setIsLoading(false);
+            setEmail('')
+            setName('')
+            setMessage('')
             // Handle success, show a success message, or redirect the user
           } else {
             //console.log('Failed to send email');
@@ -47,11 +50,11 @@ const Contact = () => {
         <div className='flex flex-col sm:flex-row'>
         <div className='flex flex-col gap-2 absolute sm:top-[220px] top-[180px] w-full sm:w-1/4 h-[70px] bg-blue-400 shadow-xl sm:left-10 rounded-md items-center justify-center'>
         <PhoneAndroidIcon fontSize='large' className='text-Primary-Color'/>
-        <h2 className='font-semibold text-Primary-Color'>+91 123456789</h2>
+        <h2 className='font-semibold text-Primary-Color'>+91 7978717120</h2>
         </div>
         <div className='flex flex-col gap-2 absolute sm:top-[220px] top-[80px] w-full sm:w-1/3 h-[70px] bg-blue-400 shadow-xl sm:right-10 rounded-md items-center justify-center'>
             <EmailOutlined fontSize='large' className='text-Primary-Color'/>
-            <h2 className='font-semibold text-Primary-Color text-sm'>contact@kanakadurgaconsultancyservices </h2>
+            <h2 className='font-semibold text-Primary-Color text-sm'>info@kanakadurgaconsultancyservices.com</h2>
         </div>
         </div>
         

@@ -18,9 +18,9 @@ export default async function handler(req, res) {
       });
 
     try {
-    // const adminTemplatePath = path.resolve('/adminEmailtemplate.html');
+     const adminTemplatePath = path.resolve('./tempates/adminEmailtemplate.html');
     
-    const adminTemplate = fs.readFileSync('/adminEmailtemplate.html', 'utf-8');
+    const adminTemplate = fs.readFileSync(adminTemplatePath, 'utf-8');
     console.log('code is ok till reading template')
     // Replace placeholders with dynamic data
     const addminDynamicData = {
